@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Untitled-2.css"> 
+</head>
+<body>
+    <p id="TAF1" style="font-size:60px;" title="Changer_de_mode">DARK_MODE</p>
+
+    <ul> 
+        <li class="tab tab-menu1 tab-active">Menu 1</li>
+        <li class="tab tab-menu2">Menu 2</li>
+        <li class="tab tab-menu3">Menu 3</li>
+    </ul>
+
+    <div class="content menu1 active">Contenu du Menu 1</div>
+    <div class="content menu2">Contenu du Menu 2</div>
+    <div class="content menu3">Contenu du Menu 3</div>
+
+    <div class="message-success"></div>
+
+    <form action="" method="POST" enctype="multipart/form-data">
+        <div>
+            <label for="pseudo">Pseudo</label>
+            <input type="text" name="pseudo" id="pseudo" required>
+            <div class="message-error">
+                <ul id="errorListPseudo"></ul> 
+            </div>
+        </div>
+                
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <div class="message-error">
+                <ul id="errorListEmail"></ul> 
+            </div>
+        </div>
+
+        <div>
+            <label for="password">Mot de passe</label>
+            <input type="password" name="password" id="password" required>
+            <div class="message-error">
+                <ul id="errorListPassword"></ul> 
+            </div>
+        </div>
+
+        <div>
+            <label for="password2">Entrer à nouveau le mot de passe</label>
+            <input type="password" name="password2" id="password2">
+            <div class="message-error">
+                <ul id="errorListPassword2"></ul> 
+            </div>
+        </div>
+
+        <button type="submit">S'inscrire</button>
+        
+    </form>
+    <script src="Untitled-3.js"></script>
+</body>
+</html>
